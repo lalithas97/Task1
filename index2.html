@@ -195,7 +195,7 @@
                 on Feedback for assistance.</strong></marquee>
         <div class="heading" style="margin-right:5px;">
             <span style="display:inline-block;color:white;">USER GROUP</span>
-            <span><input class="form-control" name="section" list="options" placeholder="--Select--" style=" width:300px;float:right;top: -6px;position:relative;"></span>
+            <span><input class="form-control" list="options" placeholder="--Select--" style=" width:300px;float:right;top: -6px;position:relative;"></span>
             <datalist id="options" width="300px">
                 <option value="----">
                     <!-- <input placeholder="Select one of the options" type="text" name="options"> -->
@@ -204,11 +204,11 @@
                 <option value="three">
             </datalist>
         </div><br>
-        <div style="float:right;">
+        <div style="float:left;padding-left:20px;">
             <p class="btn btn-primary">Monthly View</p>
             <p class="btn btn-dark">Yearly View</p>
         </div>
-        <br>
+        <br><br>
         <div class="monthview">
             <input name="dates" type="month" value="2022-04"><br><br>
             <h3>Monthly Vacation View</h3>
@@ -470,15 +470,18 @@
                 <div class="modal-body">
                     <div>
                         <p class="para">Team</p>
-                        <select><option></option>
+                        <input class="form-control" list="opt" placeholder="--Select--" >
+
+                      <datalist id="opt" >
+                            <option></option>
                             <option>Team A</option>
                             <option>Team B</option>
 
-                        </select>
+                        </datalist>
                         <br><br>
                         <p class="para">Feedback:</p>
-                    
-                        <textarea height="300px" style="overflow:auto;width:100%;padding:10px;">
+
+                        <textarea class="form-control" height="300px" style="overflow:auto;width:100%;padding:10px;">
 
                         </textarea>
                     </div>
